@@ -25,6 +25,7 @@ namespace AgileTickets.Web.Controllers
             string titulo = "Todos os espetaculos";
 
             ViewBag.Estabelecimentos = estabelecimentos.Todos();
+            
             return View(agenda.Espetaculos());
         }
 

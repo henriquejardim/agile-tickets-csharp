@@ -15,12 +15,12 @@ namespace AgileTickets.Web.Controllers
 
         public EstabelecimentosController(DiretorioDeEstabelecimentos estabelecimentos)
         {
-            // guarda estabelecimento
             this.estabelecimentos = estabelecimentos;
         }
 
         public ActionResult Index()
         {
+            
             return View(estabelecimentos.Todos());
         }
 
@@ -28,10 +28,9 @@ namespace AgileTickets.Web.Controllers
         public ActionResult Novo(Estabelecimento estabelecimento)
         {
             var copia = estabelecimento;
-
+            
             estabelecimentos.Salva(estabelecimento);
 
-            // redireciona
             return RedirectToAction("Index");
         }
 

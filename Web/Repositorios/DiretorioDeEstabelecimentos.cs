@@ -11,5 +11,6 @@ namespace AgileTickets.Web.Repositorios
         IList<Estabelecimento> Todos();
 
         void Salva(Estabelecimento estabelecimento);
+        void Remove(Estabelecimento estabelecimento);
     }
-}
+}   

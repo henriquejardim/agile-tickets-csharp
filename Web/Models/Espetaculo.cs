@@ -17,6 +17,7 @@ namespace AgileTickets.Web.Models
         public Espetaculo()
         {
             this.Sessoes = new List<Sessao>();
+            this.Estabelecimento = new Estabelecimento();
         }
         /*
          * Esse metodo eh responsavel por criar sessoes para

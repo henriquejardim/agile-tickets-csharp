@@ -26,5 +26,11 @@ namespace AgileTickets.Web.Infra.Dao
         {
             session.Save(estabelecimento);
         }
+
+        public void Remove(Estabelecimento estabelecimento)
+        {
+            session.Delete(estabelecimento);
+        }
+
     }
 }
