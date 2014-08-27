@@ -25,7 +25,6 @@ namespace AgileTickets.Web.Models
         {
             get
             {
-                // faz a conta de total de ingressos menos ingressos reservados
                 return TotalDeIngressos - IngressosReservados;
             }
         }
@@ -45,7 +44,6 @@ namespace AgileTickets.Web.Models
 
         public virtual void Reserva(int quantidade)
         {
-            // soma quantidade na variavel ingressos reservados
             this.IngressosReservados += quantidade;
         }
     }
