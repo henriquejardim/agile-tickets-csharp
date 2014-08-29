@@ -91,6 +91,33 @@ namespace Tests.Models
             return sessao;
         }
 
+        public void DeveCriarSessoesDiarias()
+        {
+            // Arrange
+            Espetaculo esp = new Espetaculo();
+            IList<Sessao> sessoes;
+            IList<Sessao> sessoesEsperadas = new List<Sessao>
+            {
+                new Sessao() { Inicio = new DateTime(2014, 8, 1) }
+            };
+
+            // Act
+            sessoes = esp.CriaSessoes(new DateTime(2014, 8, 1), new DateTime(2014, 8, 1), Periodicidade.DIARIA);
+
+            // Assert
+            
+
+        }
+
+        public void DeveCriarSessoesSemanais()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+        }
+
 
     }
 }
